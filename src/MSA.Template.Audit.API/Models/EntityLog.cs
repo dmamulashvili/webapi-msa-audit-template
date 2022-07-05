@@ -7,7 +7,7 @@ public class EntityLog
     }
 
     public EntityLog(
-        string sourceAddress,
+        string producer,
         Guid correlationId,
         Guid initiatorId,
         string entityName,
@@ -17,7 +17,7 @@ public class EntityLog
         string? propertyCurrentValue,
         DateTimeOffset creationDate)
     {
-        SourceAddress = sourceAddress;
+        Producer = producer;
         CorrelationId = correlationId;
         InitiatorId = initiatorId;
         EntityName = entityName;
@@ -29,7 +29,7 @@ public class EntityLog
     }
 
     public Guid Id { get; private set; }
-    public string SourceAddress { get; set; }
+    public string Producer { get; set; }
     public Guid CorrelationId { get; private set; }
     public Guid InitiatorId { get; private set; }
     public string EntityName { get; private set; } = null!;

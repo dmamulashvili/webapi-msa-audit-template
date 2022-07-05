@@ -11,7 +11,7 @@ public class EntityLogTypeConfiguration : IEntityTypeConfiguration<EntityLog>
         entityLogConfiguration.ToTable(nameof(EntityLog));
         entityLogConfiguration.HasKey(p => p.Id);
 
-        entityLogConfiguration.HasIndex(p => p.SourceAddress);
+        entityLogConfiguration.HasIndex(p => p.Producer);
         entityLogConfiguration.HasIndex(p => p.EntityId);
         entityLogConfiguration.HasIndex(p => p.EntityName);
         entityLogConfiguration.HasIndex(p => p.PropertyName);

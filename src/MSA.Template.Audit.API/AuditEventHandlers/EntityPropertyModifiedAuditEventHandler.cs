@@ -20,7 +20,7 @@ public class EntityPropertyModifiedAuditEventHandler : IAuditEventHandler<Entity
         foreach (var message in context.Message)
         {
             var entityLog = new EntityLog(
-                message.SourceAddress.Host,
+                message.Host.Assembly,
                 message.Message.CorrelationId,
                 message.Message.InitiatorId,
                 message.Message.EntityName,
