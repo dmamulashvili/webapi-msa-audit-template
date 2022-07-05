@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSA.Template.Audit.API", "src\MSA.Template.Audit.API\MSA.Template.Audit.API.csproj", "{D2E810A3-2B2E-487F-A6B6-9F15CB245B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSA.Template.Audit", "src\MSA.Template.Audit\MSA.Template.Audit.csproj", "{F29A5B44-16D3-4360-A119-A3C9B814A4E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2E810A3-2B2E-487F-A6B6-9F15CB245B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E810A3-2B2E-487F-A6B6-9F15CB245B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E810A3-2B2E-487F-A6B6-9F15CB245B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E810A3-2B2E-487F-A6B6-9F15CB245B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F29A5B44-16D3-4360-A119-A3C9B814A4E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29A5B44-16D3-4360-A119-A3C9B814A4E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29A5B44-16D3-4360-A119-A3C9B814A4E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29A5B44-16D3-4360-A119-A3C9B814A4E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
