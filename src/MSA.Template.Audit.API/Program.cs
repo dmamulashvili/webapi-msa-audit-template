@@ -30,8 +30,8 @@ builder.Services.AddAuthentication(options =>
         cfg.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateLifetime = true,
-            ValidateAudience = true,
-            ValidAudience = builder.Configuration["JWT:ValidAudience"],
+            // ValidateAudience = true,
+            // ValidAudience = builder.Configuration["JWT:ValidAudience"],
             ValidateIssuer = true,
             ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
             ValidateIssuerSigningKey = true,
