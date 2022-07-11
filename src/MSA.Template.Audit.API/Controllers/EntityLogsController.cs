@@ -6,7 +6,7 @@ using MSA.Template.Audit.API.Models;
 namespace MSA.Template.Audit.API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class EntityLogsController : ControllerBase
 {
     private readonly ILogger<EntityLogsController> _logger;
