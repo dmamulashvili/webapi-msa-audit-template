@@ -143,4 +143,6 @@ app.UseResponseCompression();
 
 app.MapHealthChecks("/");
 
+app.Services.GetRequiredService<AuditDbContext>().Database.Migrate();
+
 app.Run();
