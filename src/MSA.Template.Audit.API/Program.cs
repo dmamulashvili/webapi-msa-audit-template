@@ -143,6 +143,8 @@ app.UseResponseCompression();
 
 app.MapHealthChecks("/");
 
-app.Services.GetRequiredService<AuditDbContext>().Database.Migrate();
-
+await using (var scope = app.Services.CreateAsyncScope())
+{
+    scope.ServiceProvider.GetRequiredService<AuditDbContext>().Database.Migrate();
+}
 app.Run();
