@@ -5,6 +5,7 @@ using MSA.Template.Audit.API.Models;
 
 namespace MSA.Template.Audit.API.Controllers;
 
+[Authorize(Roles = "Admin")]
 [ApiController]
 [Route("api/[controller]")]
 public class EntityLogsController : ControllerBase
