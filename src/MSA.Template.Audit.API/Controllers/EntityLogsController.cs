@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MSA.Template.Audit.API.Data;
@@ -19,11 +20,11 @@ public class EntityLogsController : ControllerBase
         _context = context;
     }
 
-    [HttpGet("{entityType}/{entityId}")]
-    public async Task<IActionResult> GetEntityLogsAsync(string entityType, string entityId)
+    [HttpGet("{producer}/{entityName}/{entityId}")]
+    public async Task<IActionResult> GetEntityLogsAsync(string producer, string entityName, string entityId)
     {
         var entityLogs = await _context.Set<EntityLog>()
-            .Where(e => e.EntityName == entityType && e.EntityId == entityId)
+            .Where(e => e.EntityName == entityName && e.EntityId == entityId)
             .ToListAsync();
 
         return Ok(entityLogs);
