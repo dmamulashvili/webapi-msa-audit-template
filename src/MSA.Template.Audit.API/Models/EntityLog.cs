@@ -29,7 +29,7 @@ public class EntityLog
     }
 
     public Guid Id { get; private set; }
-    public string Producer { get; set; }
+    public string Producer { get; private set; } = null!;
     public Guid CorrelationId { get; private set; }
     public Guid InitiatorId { get; private set; }
     public string EntityName { get; private set; } = null!;
