@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Dimitri Mamulashvili",
   "classifications": [ "Web", "WebAPI", "Audit", "Microservice" ],
-  "identity": "MSCA.Template",
+  "identity": "MSA.Template.Audit",
   "name": "ASP.NET Core Web API Audit Microservice Template",
   "shortName": "webapi-msa-audit",
   "sourceName": "MSA.Template",
