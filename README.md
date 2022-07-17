@@ -16,7 +16,7 @@ dotnet new --install .
 Create Solution
 ```console
 cd /<DIRECTORY_TO_CREATE_SOLUTION_AT>
-dotnet new webapi-msa-audit -o "MyCompany.MyProject"
+dotnet new webapi-msa-audit -o "MyCompany.MyProject.Audit"
 ```
 ## Configure:
 Update PostgreSQL connection string in case you're not using local one.
