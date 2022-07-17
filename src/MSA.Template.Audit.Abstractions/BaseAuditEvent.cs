@@ -1,6 +1,6 @@
-﻿using MSA.Template.Audit.Interfaces;
+﻿using MSA.Template.Audit.Abstractions.Interfaces;
 
-namespace MSA.Template.Audit;
+namespace MSA.Template.Audit.Abstractions;
 
 public abstract class BaseAuditEvent : IAuditEvent
 {

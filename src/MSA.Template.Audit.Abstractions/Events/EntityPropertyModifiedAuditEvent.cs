@@ -1,4 +1,4 @@
-namespace MSA.Template.Audit.Events;
+namespace MSA.Template.Audit.Abstractions.Events;
 
 public class EntityPropertyModifiedAuditEvent : BaseAuditEvent
 {

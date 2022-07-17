@@ -1,8 +1,8 @@
 using MassTransit;
+using MSA.Template.Audit.Abstractions.Events;
+using MSA.Template.Audit.Abstractions.Interfaces;
 using MSA.Template.Audit.API.Data;
 using MSA.Template.Audit.API.Models;
-using MSA.Template.Audit.Events;
-using MSA.Template.Audit.Interfaces;
 
 namespace MSA.Template.Audit.API.AuditEventHandlers;
 
