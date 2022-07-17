@@ -26,7 +26,7 @@ Update PostgreSQL connection string in case you're not using local one.
   },
 ```
 Create aws user with Programmatic access & read/write permissions to SNS/SQS.
->**Warning**
+>**Warning**  
 >The following characters are accepted in QueueName: alphanumeric characters, hyphens (-), and underscores (_).
 ```json
 "AmazonSqsConfiguration": {
@@ -37,7 +37,7 @@ Create aws user with Programmatic access & read/write permissions to SNS/SQS.
   },
 ```
 Configure JWT
->**Warning**
+>**Warning**  
 >ValidateAudience is disabled by default in `Program.cs`, you can leave it empty.
 ```json
 "JWT": {
@@ -47,8 +47,6 @@ Configure JWT
   }
 ```
 
-> **Note** 
->
-> ASP.NET Core Web API Identity Microservice template: <https://github.com/dmamulashvili/webapi-msa-identity-template.git>
->
+> **Note**  
+> ASP.NET Core Web API Identity Microservice template: <https://github.com/dmamulashvili/webapi-msa-identity-template.git>  
 > ASP.NET Core Web API Microservice template using Clean Architecture & CQRS: <https://github.com/dmamulashvili/webapi-msa-template.git>
