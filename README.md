@@ -51,4 +51,4 @@ Configure JWT
 >
 > ASP.NET Core Web API Identity Microservice template: <https://github.com/dmamulashvili/webapi-msa-identity-template.git>
 >
-> ASP.NET Core Web API Microservice using CQRS template: <https://github.com/dmamulashvili/webapi-msa-template.git>
+> ASP.NET Core Web API Microservice template using Clean Architecture & CQRS: <https://github.com/dmamulashvili/webapi-msa-template.git>
