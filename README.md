@@ -16,13 +16,13 @@ dotnet new --install .
 Create Solution
 ```console
 cd /<DIRECTORY_TO_CREATE_SOLUTION_AT>
-dotnet new webapi-msa-audit -o "MyCompany.MyProject.Audit"
+dotnet new webapi-msa-audit -o "MyCompany.MyProject.MyAudit"
 ```
 ## Configure:
 Update PostgreSQL connection string in case you're not using local one.
 ```json
 "ConnectionStrings": {
-  "AuditDbContext": "Server=localhost;Port=5432;Database=MyCompany.MyProject.AuditDb;User Id=postgres;password=postgres"
+  "AuditDbContext": "Server=localhost;Port=5432;Database=MyCompany.MyProject.MyAuditDb;User Id=postgres;password=postgres"
 },
 ```
 Create aws user with Programmatic access & read/write permissions to SNS/SQS.
@@ -33,7 +33,7 @@ Create aws user with Programmatic access & read/write permissions to SNS/SQS.
   "AccessKey": "",
   "SecretKey": "",
   "RegionEndpointSystemName": "eu-central-1",
-  "QueueName" : "MyCompany_MyProject_Audit"
+  "QueueName" : "MyCompany_MyProject_MyAudit"
 },
 ```
 Configure JWT
