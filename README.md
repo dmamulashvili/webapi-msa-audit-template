@@ -19,7 +19,7 @@ cd /<DIRECTORY_TO_CREATE_SOLUTION_AT>
 dotnet new webapi-msa-audit -o "MyCompany.MyProject"
 ```
 ## Configure:
-Update PostgreSQL connection string incase your not using local one.
+Update PostgreSQL connection string in case you're not using local one.
 ```json
   "ConnectionStrings": {
     "AuditDbContext": "Server=localhost;Port=5432;Database=MyCompany.MyProject.AuditDb;User Id=postgres;password=postgres"
