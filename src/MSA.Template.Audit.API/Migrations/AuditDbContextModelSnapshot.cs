@@ -22,7 +22,7 @@ namespace MSA.Template.Audit.API.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("MSA.Template.Audit.API.Models.EntityLog", b =>
+            modelBuilder.Entity("MSA.Template.Audit.Abstractions.API.Models.EntityLog", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

@@ -147,4 +147,5 @@ await using (var scope = app.Services.CreateAsyncScope())
 {
     scope.ServiceProvider.GetRequiredService<AuditDbContext>().Database.Migrate();
 }
+
 app.Run();

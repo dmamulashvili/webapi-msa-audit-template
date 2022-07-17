@@ -4,6 +4,8 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <AssemblyName>MSA.Template.Audit.Abstractions</AssemblyName>
+        <RootNamespace>MSA.Template.Audit.Abstractions</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
