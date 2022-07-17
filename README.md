@@ -21,30 +21,30 @@ dotnet new webapi-msa-audit -o "MyCompany.MyProject.Audit"
 ## Configure:
 Update PostgreSQL connection string in case you're not using local one.
 ```json
-  "ConnectionStrings": {
-    "AuditDbContext": "Server=localhost;Port=5432;Database=MyCompany.MyProject.AuditDb;User Id=postgres;password=postgres"
-  },
+"ConnectionStrings": {
+  "AuditDbContext": "Server=localhost;Port=5432;Database=MyCompany.MyProject.AuditDb;User Id=postgres;password=postgres"
+},
 ```
 Create aws user with Programmatic access & read/write permissions to SNS/SQS.
 >**Warning**  
 >The following characters are accepted in QueueName: alphanumeric characters, hyphens (-), and underscores (_).
 ```json
 "AmazonSqsConfiguration": {
-    "AccessKey": "",
-    "SecretKey": "",
-    "RegionEndpointSystemName": "eu-central-1",
-    "QueueName" : "MyCompany_MyProject_Audit"
-  },
+  "AccessKey": "",
+  "SecretKey": "",
+  "RegionEndpointSystemName": "eu-central-1",
+  "QueueName" : "MyCompany_MyProject_Audit"
+},
 ```
 Configure JWT
 >**Warning**  
 >ValidateAudience is disabled by default in `Program.cs`, you can leave it empty.
 ```json
 "JWT": {
-    "ValidAudience": "",
-    "ValidIssuer": "",
-    "Secret": ""
-  }
+  "ValidAudience": "",
+  "ValidIssuer": "",
+  "Secret": ""
+}
 ```
 
 > **Note**  
