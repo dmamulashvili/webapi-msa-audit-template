@@ -1,4 +1,6 @@
-namespace MSA.Template.Audit.Abstractions.Interfaces;
+using MSA.Template.Audit;
+
+namespace SharedKernel.Audit.Interfaces;
 
 public interface IAuditEventService
 {

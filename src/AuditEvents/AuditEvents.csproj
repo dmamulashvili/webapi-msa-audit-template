@@ -4,12 +4,10 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AssemblyName>MSA.Template.Audit.Abstractions</AssemblyName>
-        <RootNamespace>MSA.Template.Audit.Abstractions</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="MassTransit" Version="8.0.5" />
+      <ProjectReference Include="..\SharedKernel.Audit\SharedKernel.Audit.csproj" />
     </ItemGroup>
 
 </Project>

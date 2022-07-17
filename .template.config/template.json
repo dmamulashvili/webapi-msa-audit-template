@@ -5,7 +5,7 @@
   "identity": "MSA.Template.Audit",
   "name": "ASP.NET Core Web API Audit Microservice Template",
   "shortName": "webapi-msa-audit",
-  "sourceName": "MSA.Template.Audit",
+  "sourceName": "MSA.Template",
   "tags": {
     "language": "C#",
     "type": "project"

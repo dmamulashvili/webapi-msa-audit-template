@@ -22,7 +22,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MSA.Template.Audit.Abstractions\MSA.Template.Audit.Abstractions.csproj" />
+      <ProjectReference Include="..\AuditEvents\AuditEvents.csproj" />
+      <ProjectReference Include="..\SharedKernel.Audit\SharedKernel.Audit.csproj" />
     </ItemGroup>
 
 </Project>
