@@ -1,5 +1,5 @@
 # webapi-msa-audit-template
-ASP.NET Core Web API Audit Microservice Template using ASP Net Core 6.0, PostgreSQL, MassTranist with AmazonSQS, JWT Auth
+ASP.NET Core Web API Audit Microservice Template using PostgreSQL, MassTranist with AmazonSQS, JWT Auth
 
 ## Install
 Clone repo
