@@ -18,7 +18,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddRouting(options => { options.LowercaseUrls = true; });
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        cfg => cfg
+            // .WithOrigins(builder.Configuration.GetSection("Cors:AllowOrigins").Get<string[]>())
+            .SetIsOriginAllowed(_ => true)
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials()
+            .SetPreflightMaxAge(TimeSpan.FromDays(1)));
+});
 builder.Services.AddAuthentication(options =>
     {
         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -133,7 +143,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("CorsPolicy");
 app.UseAuthentication();
 app.UseAuthorization();
 
