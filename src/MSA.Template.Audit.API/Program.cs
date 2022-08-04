@@ -92,18 +92,20 @@ builder.Services.AddMassTransit(configurator =>
         var amazonSqsConfig = builder.Configuration.GetSection(nameof(AmazonSqsConfiguration))
             .Get<AmazonSqsConfiguration>();
 
+        Guard.Against.NullOrWhiteSpace(amazonSqsConfig.Scope, nameof(amazonSqsConfig.Scope));
+
         cfg.Host(amazonSqsConfig.RegionEndpointSystemName,
             h =>
             {
                 h.AccessKey(amazonSqsConfig.AccessKey);
                 h.SecretKey(amazonSqsConfig.SecretKey);
 
-                h.Scope(builder.Environment.EnvironmentName, true);
+                h.Scope($"{builder.Environment.EnvironmentName}_{amazonSqsConfig.Scope}", true);
             });
 
         Guard.Against.NullOrWhiteSpace(amazonSqsConfig.QueueName, nameof(amazonSqsConfig.QueueName));
 
-        cfg.ReceiveEndpoint($"{builder.Environment.EnvironmentName}_{amazonSqsConfig.QueueName}",
+        cfg.ReceiveEndpoint($"{builder.Environment.EnvironmentName}_{amazonSqsConfig.Scope}_{amazonSqsConfig.QueueName}",
             e =>
             {
                 e.UseMessageRetry(r =>
