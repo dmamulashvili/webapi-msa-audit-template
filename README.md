@@ -33,8 +33,8 @@ Create aws user with Programmatic access & read/write permissions to SNS/SQS.
   "AccessKey": "",
   "SecretKey": "",
   "RegionEndpointSystemName": "eu-central-1",
-  "Scope": "",
-  "QueueName" : "MyCompany_MyProject_MyAudit"
+  "Scope": "MyProject",
+  "QueueName" : "MyQueueName"
 },
 ```
 Configure JWT
